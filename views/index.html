@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>はじめの一歩</title>
+  </head>
+  <body>
+    <h1 id="result">ここに出力</h1>
+    <script>
+      const hResult = document.getElementById('result');
+      const text01  = hResult.innerText;
+      // alert(text01); // アラート表示
+      console.log(text01); // 標準出力
+      hResult.innerText = 'Hello World!';
+      hResult.style.fontSize = '50px'; // フォントサイズ変更
+      hResult.style.color = 'orange'; // 色の変更
+    </script>
+    <form method="post" action="/post1">
+      <input type="text" name="param1"/>
+      <input type="submit"/>
+    </form>
+  </body>
+</html>
